@@ -1,0 +1,8 @@
+{
+  "name": "features",
+  "version": "0.1.0",
+  "description": "full features templates for bjb",
+  "main": "index.js",
+  "author": "bjb",
+  "license": "MIT"
+}

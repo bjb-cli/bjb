@@ -1,0 +1,83 @@
+{
+  "name": "bjb",
+  "version": "1.0.0",
+  "description": "项目脚手架",
+  "main": "lib/index.js",
+  "bin": {
+    "bjb": "bin/bjb.js"
+  },
+  "scripts": {
+    "lint": "standard",
+    "test": "jest --coverage",
+    "prepare": "husky install .github/husky"
+  },
+  "keywords": [
+    "bjb",
+    "cli"
+  ],
+  "files": [
+    "bin",
+    "lib"
+  ],
+  "author": "bjb-cli",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "@commitlint/cli": "^17.1.2",
+    "@commitlint/config-conventional": "^17.1.0",
+    "@types/jest": "^29.0.0",
+    "adm-zip": "^0.5.9",
+    "cac": "^6.7.14",
+    "chalk": "^4.1.2",
+    "env-paths": "^2.2.1",
+    "fast-glob": "^3.2.11",
+    "husky": "^8.0.1",
+    "ini": "^3.0.1",
+    "jest": "^29.0.2",
+    "lint-staged": "^13.0.3",
+    "lodash": "^4.17.21",
+    "node-fetch": "^2.6.7",
+    "ora": "^5.4.1",
+    "prompts": "^2.4.2",
+    "semver": "^7.3.7",
+    "socks-proxy-agent": "^7.0.0",
+    "standard": "^17.0.0",
+    "validate-npm-package-name": "^4.0.0"
+  },
+  "standard": {
+    "env": [
+      "jest"
+    ]
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "lint-staged": {
+    "*.js": "standard --fix"
+  },
+  "jest": {
+    "roots": [
+      "<rootDir>/test"
+    ],
+    "testTimeout": 20000,
+    "testEnvironment": "node",
+    "collectCoverageFrom": [
+      "lib/**"
+    ],
+    "moduleNameMapper": {
+      "#(.*)": "<rootDir>/node_modules/$1"
+    },
+    "transformIgnorePatterns": [
+      "node_modules/(?!(node-fetch|fetch-blob|formdata-polyfill|data-uri-to-buffer|env-paths|ora|cli-cursor|restore-cursor|chalk|log-symbols|is-unicode-supported|is-interactive|strip-ansi|ansi-regex))"
+    ],
+    "testPathIgnorePatterns": [
+      "\\\\node_modules\\\\",
+      "<rootDir>/test/fixtures"
+    ]
+  },
+  "engines": {
+    "node": ">=14.14"
+  }
+}
