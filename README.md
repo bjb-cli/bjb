@@ -80,7 +80,7 @@ BJB (**B**reak **J**op **B**oom)
 ### 环境准备
 
 - [Node.js](https://nodejs.org) (必须 >= 14.14, >= 16.13 更佳)
-- [npm](https://www.npmjs.com) (>= 7.x) 或 [pnpm](https://pnpm.io) (>= 6.x) 或 [yarn](https://yarnpkg.com) (>= 1.22)
+- [npm](https://www.npmjs.com) (>= 7.x) 或 [yarn](https://yarnpkg.com) (>= 1.22)
 - [Git](https://git-scm.com) (>= 2.0)
 
 ### 安装
@@ -228,7 +228,7 @@ $ bjb list [owner] [-j|--json] [-s|--short]
 - [nm](https://github.com/bjb-cli/nm) - 用来创建 [Node](https://nodejs.org) 模块
 - [vite](https://github.com/bjb-cli/vite) - 用来创建基于 [Vite](https://github.com/vitejs/vite) 的 Vue.js 应用
 - [component](https://github.com/bjb-cli/component) - 用来创建 组件库
-- [x-pages](https://github.com/bjb-cli/pages) - 用来创建 [Pages](https://github.com/bjb-cli/pages) 静态站点
+- [pages](https://github.com/bjb-cli/pages) - 用来创建 [Pages](https://github.com/bjb-cli/pages) 静态站点
 
 可能还有更多：https://github.com/bjb-cli
 
